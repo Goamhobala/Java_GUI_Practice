@@ -18,6 +18,8 @@ public class MondrianFrame extends JFrame {
 	 */
 
 	public MondrianFrame() {
+		super();
+		
 		setTitle("Piet Mondrian, Composition with Red, Blue, and Yellow, 1930");
 		setLayout(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
