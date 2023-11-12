@@ -16,16 +16,16 @@ public class ButtonFrame  extends JFrame{
 	PoopButton[] bowelStates;
 	public ButtonFrame() {
 		
-		setVisible(true);
+
 		setSize(800,800);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLayout(null);
 		setTitle("Defecation Activities Simulator");
-//		BackgroundPanel background = new BackgroundPanel(new ImageIcon("SpongeBobBathroom800.png"));
-//		background.setLayout(null);
-//		background.setBounds(0, 0, 800, 800);
-//		background.setBackground(new Color(0, 0, 0, 0));
-//		add(background);
+		BackgroundPanel background = new BackgroundPanel(new ImageIcon("SpongeBobBathroom800.png"));
+		background.setLayout(null);
+		background.setBounds(0, 0, 800, 800);
+		background.setBackground(new Color(0, 0, 0, 0));
+
 		
 		ImageIcon song = new ImageIcon("song.png");
 		ImageIcon constipatedPhilosopher = new ImageIcon("constipated.png");
@@ -66,7 +66,11 @@ public class ButtonFrame  extends JFrame{
 		Font enlargedButtonFont = new Font(boterasu.getFont().getName(), boterasu.getFont().getStyle(), 36 );
 		boterasu.setFont(enlargedButtonFont);
 		meat.setFont(enlargedButtonFont);
+		
+		add(background);
+		setVisible(true);
 	}
+	
 
 
 }
