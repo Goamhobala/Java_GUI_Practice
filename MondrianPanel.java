@@ -13,6 +13,13 @@ public class MondrianPanel extends JPanel {
 		this.setBackground(color);
 	}
 	
+	public MondrianPanel(Color color) {
+		this.color = color;
+		this.x_ratio = 0;
+		this.y_ratio = 0;
+		this.setBackground(color);
+	}
+	
 	public Color getColor() {
 		return this.color;
 	}
