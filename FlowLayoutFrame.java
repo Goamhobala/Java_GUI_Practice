@@ -45,9 +45,7 @@ class PoopButton2 extends PoopButton{
 		this.setPreferredSize(new Dimension(100, 100));
 	}
 	
-	public static void addButtonstoFrame(int quantity, JFrame frame) {
-		for (int i = 0; i<quantity ; i++ ) {
-			frame.add(new PoopButton2(false, Color.WHITE));
-		}
+	public PoopButton2(PoopButton2 source) {
+		super(source);
 	}
 }
